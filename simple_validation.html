@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            alert("Welcome! Your form has been submitted.");
+            return true; // allow submission
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+
+        <label>
+            <input type="checkbox" name="terms" required> I accept the terms and conditions
+        </label>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="30" required></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
