@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date time objects</title>
+</head>
+<script>
+        // Current date and time
+        let now = new Date();
+        document.write("Current date and time: " + now + "<br/>");
+
+        // Specific date string
+        let christmas = new Date("2023-12-25T10:00:00");
+        document.write("Christmas date: " + christmas + "<br/>");
+
+        // Using year, month, day, hour, minute, second
+        let customDate = new Date(2023, 11, 25, 10, 0, 0); // December 25, 2023
+        document.write("Custom date: " + customDate + "<br/>");
+
+        // Using timestamp (milliseconds since Jan 1, 1970)
+        let fromTimestamp = new Date(1672531200000);
+        document.write(" Date from timestamp: " + fromTimestamp + "<br/>");
+
+        let d = new Date();
+        document.write(d.getFullYear() + "<br/>");
+        document.write(d.getDate() + "<br/>");
+        document.write(d.getMonth() + "<br/>");
+        document.write(d.getDay() + "<br/>");
+        document.write(d.getHours() + "<br/>");
+        document.write(d.getMinutes() + "<br/>");
+        document.write(d.getSeconds() + "<br/>");
+
+        document.write(d.toDateString() + "<br/>");
+        document.write(d.toTimeString() + "<br/>");
+        document.write(d.toLocaleString() + "<br/>");
+
+    </script>
+<body>
+    
+</body>
+</html>

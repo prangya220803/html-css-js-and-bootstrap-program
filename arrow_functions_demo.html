@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <script>
+        const add = (a, b) => a + b;
+        const sub = (a, b) => a - b;
+        const mul = (a, b) => a * b;
+        const div = (a, b) => a / b;
+        const modu = (a, b) => a % b;
+
+        document.write('Addition result is : ' + add(10,2) + '<br/>');
+        document.write('subtraction result is : ' + sub(10,2) + '<br/>');
+        document.write('multiplication result is : ' + mul(10,2) + '<br/>');
+        document.write('division result is : ' + div(10,2) + '<br/>');
+        document.write('modulus result is : ' + modu(10,2) + '<br/>');
+
+        // Arrow Function without parameters
+        const greet = () => "Hello";
+
+        //ES6 feature - template literal
+        const name = "Prangya";
+        document.write(`Hello, ${name}!` + '<br/>');
+
+        //for--of loop
+        const fruits = ["apple", "banana"];
+        for (const fruit of fruits)
+    {
+        document.write(fruit + '<br/>');
+    }
+
+    //classes in ES6
+    class Animal
+    {
+        speak()
+        {
+            document.write("The animal makes a sound" + '<br/>');
+        }
+    }
+    const dog = new Animal();
+    dog.speak();
+
+    //map in ES6
+    const map = new Map();
+    map.set("a", 1);
+    const set = new Set([1, 2, 2, 3]);
+    document.write(map + '<br/>');
+    document.write(set + '<br/>');
+    alert(map);
+    alert(set);
+    </script>
+</body>
+</html>

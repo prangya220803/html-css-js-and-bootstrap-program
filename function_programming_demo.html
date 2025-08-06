@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Functional programming</title>
+</head>
+<body>
+
+<script>
+  const arr = [1, 2, "3", "4", 5, 6, "7", 8, "9"];
+  // Pure function to convert to number
+  const toNumber = el => Number(el);
+
+  // Pure function to check even
+  const isEven = el => el % 2 === 0;
+
+  // Compose functions
+  const result = arr.map(toNumber).filter(isEven);
+  document.write(result); // Output: [2, 4, 6, 8]
+</script>
+
+</body>
+</html>
